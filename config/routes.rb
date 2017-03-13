@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'view_pages/home'
+
+  get 'view_pages/blog'
+
   resources :articles do
   	resources :comments
   end
